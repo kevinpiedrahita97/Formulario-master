@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página  -->
+        <title>Inscripcion</title>
+    </head>
+
+    <body>  
+
+                <!-- Cabecera con título y subtítulo (ambos con css id "title") -->        <div>
+            <h1 id="titulo">  DEVs Registration</h1>
+            <p id="subtitulo">Complete your information</p>
+            <br>
+        </div>
+
+        <!-- Início de formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo nombre con leyenda "nombre" y clase css "campo" -->
+                <div class="campo">
+                    <label for="Name"><strong>Name</strong></label>
+                    <input type="text" name="Name" id="Name" required>
+                </div>
+
+                <!-- Campo apellido con leyenda "apellido" y clase css "campo" -->
+                <div class="campo">
+                    <label for="AboutName"><strong>AboutName</strong></label>
+                    <input type="text" name="AboutName" id="AboutName" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo de desarrollo web con 3 opciones de botón seleccionables (botón de radio) y css de clase "campo" -->
+            <div class="campo">
+                <label><strong>About Name From which side of the application is it developed?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+            <!-- Campo antigüedad con 3 opciones a elegir (seleccionar opción) y clase css "campo" -->
+            <div class="campo">
+                <label for="senior"><strong>Select</strong></label>
+                <select id="Select" required>
+                <option selected disabled value="">Select</option>
+                <option>Júnior</option>
+                <option>Semi JR</option>
+                <option>Sênior</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de tecnologías para elegir 1 o más opciones a marcar (checkbox) y clase css "campo" -->
+                <div id="check">
+                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1"> HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2"> CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3"> JavaScript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4"> PHP</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5"> C#</label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                    <label for="tecnologia6"> Python</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                    <label for="tecnologia7"> Java</label>
+                </div>
+            </fieldset>
+
+            <!-- Cuadro de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Tell us more about your experience: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <!-- Botón para enviar el formulario -->
+            <button class="boton" type="submit" onsubmit="">Terminar</button>            
+
+        </form>
+
+        <footer>
+            <H2 class="Kevin
+            ">Work Done By Kevin Piedrahita </H2>
+        </footer>
+
+    </body>
+
+</html>
+
+
+
+
